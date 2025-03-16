@@ -24,8 +24,8 @@
 		D65DF5682D80B70E00A7EDD3 /* LoginPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65DF5662D80B70E00A7EDD3 /* LoginPracticeTests.swift */; };
 		D65DF56C2D80B71100A7EDD3 /* LoginPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65DF5692D80B71100A7EDD3 /* LoginPracticeUITests.swift */; };
 		D65DF56D2D80B71100A7EDD3 /* LoginPracticeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65DF56A2D80B71100A7EDD3 /* LoginPracticeUITestsLaunchTests.swift */; };
-		D65DF5702D80BC3F00A7EDD3 /* SocialLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65DF56F2D80BC3F00A7EDD3 /* SocialLoginButton.swift */; };
 		D65DF5742D80DA5B00A7EDD3 /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65DF5732D80DA5B00A7EDD3 /* UserInfoView.swift */; };
+		D65DF5782D86F26100A7EDD3 /* SocialLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65DF5762D86F26100A7EDD3 /* SocialLoginButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,8 +66,8 @@
 		D65DF5662D80B70E00A7EDD3 /* LoginPracticeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPracticeTests.swift; sourceTree = "<group>"; };
 		D65DF5692D80B71100A7EDD3 /* LoginPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPracticeUITests.swift; sourceTree = "<group>"; };
 		D65DF56A2D80B71100A7EDD3 /* LoginPracticeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPracticeUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		D65DF56F2D80BC3F00A7EDD3 /* SocialLoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginButton.swift; sourceTree = "<group>"; };
 		D65DF5732D80DA5B00A7EDD3 /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
+		D65DF5762D86F26100A7EDD3 /* SocialLoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,10 +185,9 @@
 				D65DF5512D80B70900A7EDD3 /* Preview Content */,
 				D65DF5522D80B70900A7EDD3 /* Assets.xcassets */,
 				D65DF5542D80B70900A7EDD3 /* Info.plist */,
-				D65DF56F2D80BC3F00A7EDD3 /* SocialLoginButton.swift */,
-				D65DF5552D80B70900A7EDD3 /* LoginView.swift */,
-				D65DF5732D80DA5B00A7EDD3 /* UserInfoView.swift */,
-				D65DF5562D80B70900A7EDD3 /* LoginViewModel.swift */,
+				D65DF5772D86F26100A7EDD3 /* Components */,
+				D65DF5792D86F27000A7EDD3 /* Views */,
+				D65DF57A2D86F27700A7EDD3 /* ViewModels */,
 			);
 			path = LoginPractice;
 			sourceTree = "<group>";
@@ -218,6 +217,31 @@
 				D65DF5452D80B70900A7EDD3 /* Adapters */,
 			);
 			path = SocialLogin;
+			sourceTree = "<group>";
+		};
+		D65DF5772D86F26100A7EDD3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D65DF5762D86F26100A7EDD3 /* SocialLoginButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D65DF5792D86F27000A7EDD3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D65DF5552D80B70900A7EDD3 /* LoginView.swift */,
+				D65DF5732D80DA5B00A7EDD3 /* UserInfoView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D65DF57A2D86F27700A7EDD3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D65DF5562D80B70900A7EDD3 /* LoginViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,11 +392,11 @@
 				D65DF5742D80DA5B00A7EDD3 /* UserInfoView.swift in Sources */,
 				D65DF55E2D80B70900A7EDD3 /* KeychainManager.swift in Sources */,
 				D65DF55F2D80B70900A7EDD3 /* AuthError.swift in Sources */,
-				D65DF5702D80BC3F00A7EDD3 /* SocialLoginButton.swift in Sources */,
 				D65DF5602D80B70900A7EDD3 /* SocialLoginService.swift in Sources */,
 				D65DF5612D80B70900A7EDD3 /* SocialLoginType.swift in Sources */,
 				D65DF5622D80B70900A7EDD3 /* UserInfo.swift in Sources */,
 				D65DF5642D80B70900A7EDD3 /* LoginView.swift in Sources */,
+				D65DF5782D86F26100A7EDD3 /* SocialLoginButton.swift in Sources */,
 				D65DF5652D80B70900A7EDD3 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
