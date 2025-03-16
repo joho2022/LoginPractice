@@ -182,12 +182,12 @@
 				D65DF5432D80B70900A7EDD3 /* App */,
 				D65DF54F2D80B70900A7EDD3 /* Model */,
 				D65DF54D2D80B70900A7EDD3 /* Core */,
-				D65DF5512D80B70900A7EDD3 /* Preview Content */,
-				D65DF5522D80B70900A7EDD3 /* Assets.xcassets */,
-				D65DF5542D80B70900A7EDD3 /* Info.plist */,
 				D65DF5772D86F26100A7EDD3 /* Components */,
 				D65DF5792D86F27000A7EDD3 /* Views */,
 				D65DF57A2D86F27700A7EDD3 /* ViewModels */,
+				D65DF5512D80B70900A7EDD3 /* Preview Content */,
+				D65DF5522D80B70900A7EDD3 /* Assets.xcassets */,
+				D65DF5542D80B70900A7EDD3 /* Info.plist */,
 			);
 			path = LoginPractice;
 			sourceTree = "<group>";
