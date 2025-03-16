@@ -143,3 +143,6 @@ iOSInjectionProject/
 
 # Xcode Configuration
 *.xcconfig
+
+
+*.xcuserstate
