@@ -26,6 +26,7 @@
 		D65DF56D2D80B71100A7EDD3 /* LoginPracticeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65DF56A2D80B71100A7EDD3 /* LoginPracticeUITestsLaunchTests.swift */; };
 		D65DF5742D80DA5B00A7EDD3 /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65DF5732D80DA5B00A7EDD3 /* UserInfoView.swift */; };
 		D65DF5782D86F26100A7EDD3 /* SocialLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65DF5762D86F26100A7EDD3 /* SocialLoginButton.swift */; };
+		D65DF57C2D88249D00A7EDD3 /* AppleLoginAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65DF57B2D88249D00A7EDD3 /* AppleLoginAdapter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		D65DF56A2D80B71100A7EDD3 /* LoginPracticeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPracticeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D65DF5732D80DA5B00A7EDD3 /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
 		D65DF5762D86F26100A7EDD3 /* SocialLoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginButton.swift; sourceTree = "<group>"; };
+		D65DF57B2D88249D00A7EDD3 /* AppleLoginAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleLoginAdapter.swift; sourceTree = "<group>"; };
+		D65DF57D2D888DE700A7EDD3 /* LoginPractice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LoginPractice.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				D65DF5442D80B70900A7EDD3 /* KakaoLoginAdapter.swift */,
+				D65DF57B2D88249D00A7EDD3 /* AppleLoginAdapter.swift */,
 			);
 			path = Adapters;
 			sourceTree = "<group>";
@@ -179,6 +183,7 @@
 		D65DF5572D80B70900A7EDD3 /* LoginPractice */ = {
 			isa = PBXGroup;
 			children = (
+				D65DF57D2D888DE700A7EDD3 /* LoginPractice.entitlements */,
 				D65DF5432D80B70900A7EDD3 /* App */,
 				D65DF54F2D80B70900A7EDD3 /* Model */,
 				D65DF54D2D80B70900A7EDD3 /* Core */,
@@ -392,6 +397,7 @@
 				D65DF5742D80DA5B00A7EDD3 /* UserInfoView.swift in Sources */,
 				D65DF55E2D80B70900A7EDD3 /* KeychainManager.swift in Sources */,
 				D65DF55F2D80B70900A7EDD3 /* AuthError.swift in Sources */,
+				D65DF57C2D88249D00A7EDD3 /* AppleLoginAdapter.swift in Sources */,
 				D65DF5602D80B70900A7EDD3 /* SocialLoginService.swift in Sources */,
 				D65DF5612D80B70900A7EDD3 /* SocialLoginType.swift in Sources */,
 				D65DF5622D80B70900A7EDD3 /* UserInfo.swift in Sources */,
@@ -560,6 +566,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LoginPractice/LoginPractice.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LoginPractice/Preview Content\"";
@@ -591,6 +598,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LoginPractice/LoginPractice.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LoginPractice/Preview Content\"";

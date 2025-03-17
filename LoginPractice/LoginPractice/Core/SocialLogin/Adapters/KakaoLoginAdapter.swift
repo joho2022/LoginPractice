@@ -13,9 +13,6 @@ final class KakaoLoginAdapter: SocialLoginService {
     @MainActor
     func login() async throws -> UserInfo {
         return try await withCheckedThrowingContinuation { continuation in
-            
-            
-            
             UserApi.shared.loginWithKakaoTalk { OAuthToken, error in
                 if let error = error {
                     print("==== Kakao Login Error ====")
@@ -57,7 +54,6 @@ final class KakaoLoginAdapter: SocialLoginService {
                     )
                     
                     continuation.resume(returning: userInfo)
-                    
                 }
             }
         }

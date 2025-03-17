@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AuthenticationServices
 
 struct LoginView: View {
     @StateObject private var viewModel = LoginViewModel()
@@ -19,11 +20,38 @@ struct LoginView: View {
                     .fontWeight(.bold)
                 
                 VStack(spacing: 16) {
-                    SocialLoginButton(type: .kakao) {
-                        Task {
-                            await viewModel.login(with: .kakao)
-                            if viewModel.userInfo != nil {
-                                isShowingUserInfo = true
+                    if let userInfo = viewModel.userInfo {
+                        Text("Welcome, \(userInfo.name)")
+                        
+                        Button {
+                            Task {
+                                await viewModel.logout()
+                            }
+                        } label: {
+                            Text("Logout")
+                                .font(.system(size: 18, weight: .semibold))
+                                .foregroundColor(.white)
+                                .frame(maxWidth: .infinity)
+                                .frame(height: 50)
+                                .background(Color.red)
+                                .cornerRadius(10)
+                        }
+                    } else {
+                        SocialLoginButton(type: .kakao) {
+                            Task {
+                                await viewModel.login(with: .kakao)
+                                if viewModel.userInfo != nil {
+                                    isShowingUserInfo = true
+                                }
+                            }
+                        }
+                        
+                        SocialLoginButton(type: .apple) {
+                            Task {
+                                await viewModel.login(with: .apple)
+                                if viewModel.userInfo != nil {
+                                    isShowingUserInfo = true
+                                }
                             }
                         }
                     }
