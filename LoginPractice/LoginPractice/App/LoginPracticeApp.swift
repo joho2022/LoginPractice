@@ -8,6 +8,7 @@
 import SwiftUI
 import KakaoSDKCommon
 import KakaoSDKAuth
+import GoogleSignIn
 
 @main
 struct LoginPracticeApp: App {
@@ -24,6 +25,8 @@ struct LoginPracticeApp: App {
                     if AuthApi.isKakaoTalkLoginUrl(url) {
                         _ = AuthController.handleOpenUrl(url: url)
                     }
+                    
+                    GIDSignIn.sharedInstance.handle(url)
                 }
         }
     }

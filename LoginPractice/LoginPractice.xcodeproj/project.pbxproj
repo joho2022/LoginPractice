@@ -27,6 +27,8 @@
 		D65DF5742D80DA5B00A7EDD3 /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65DF5732D80DA5B00A7EDD3 /* UserInfoView.swift */; };
 		D65DF5782D86F26100A7EDD3 /* SocialLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65DF5762D86F26100A7EDD3 /* SocialLoginButton.swift */; };
 		D65DF57C2D88249D00A7EDD3 /* AppleLoginAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65DF57B2D88249D00A7EDD3 /* AppleLoginAdapter.swift */; };
+		D65DF5812D89E3AA00A7EDD3 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = D65DF5802D89E3AA00A7EDD3 /* GoogleSignIn */; };
+		D65DF5832D89E61900A7EDD3 /* GoogleLoginAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65DF5822D89E61900A7EDD3 /* GoogleLoginAdapter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,7 @@
 		D65DF5762D86F26100A7EDD3 /* SocialLoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginButton.swift; sourceTree = "<group>"; };
 		D65DF57B2D88249D00A7EDD3 /* AppleLoginAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleLoginAdapter.swift; sourceTree = "<group>"; };
 		D65DF57D2D888DE700A7EDD3 /* LoginPractice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LoginPractice.entitlements; sourceTree = "<group>"; };
+		D65DF5822D89E61900A7EDD3 /* GoogleLoginAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleLoginAdapter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D65DF53E2D80B32300A7EDD3 /* KakaoSDK in Frameworks */,
+				D65DF5812D89E3AA00A7EDD3 /* GoogleSignIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +137,7 @@
 			children = (
 				D65DF5442D80B70900A7EDD3 /* KakaoLoginAdapter.swift */,
 				D65DF57B2D88249D00A7EDD3 /* AppleLoginAdapter.swift */,
+				D65DF5822D89E61900A7EDD3 /* GoogleLoginAdapter.swift */,
 			);
 			path = Adapters;
 			sourceTree = "<group>";
@@ -267,6 +272,7 @@
 			name = LoginPractice;
 			packageProductDependencies = (
 				D65DF53D2D80B32300A7EDD3 /* KakaoSDK */,
+				D65DF5802D89E3AA00A7EDD3 /* GoogleSignIn */,
 			);
 			productName = LoginPractice;
 			productReference = D65DF4122D7E073500A7EDD3 /* LoginPractice.app */;
@@ -346,6 +352,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				D65DF53C2D80B32300A7EDD3 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
+				D65DF57F2D89E3AA00A7EDD3 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D65DF4132D7E073500A7EDD3 /* Products */;
@@ -395,6 +402,7 @@
 				D65DF55C2D80B70900A7EDD3 /* KakaoLoginAdapter.swift in Sources */,
 				D65DF55D2D80B70900A7EDD3 /* AuthManager.swift in Sources */,
 				D65DF5742D80DA5B00A7EDD3 /* UserInfoView.swift in Sources */,
+				D65DF5832D89E61900A7EDD3 /* GoogleLoginAdapter.swift in Sources */,
 				D65DF55E2D80B70900A7EDD3 /* KeychainManager.swift in Sources */,
 				D65DF55F2D80B70900A7EDD3 /* AuthError.swift in Sources */,
 				D65DF57C2D88249D00A7EDD3 /* AppleLoginAdapter.swift in Sources */,
@@ -743,6 +751,14 @@
 				kind = branch;
 			};
 		};
+		D65DF57F2D89E3AA00A7EDD3 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -750,6 +766,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D65DF53C2D80B32300A7EDD3 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
 			productName = KakaoSDK;
+		};
+		D65DF5802D89E3AA00A7EDD3 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D65DF57F2D89E3AA00A7EDD3 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

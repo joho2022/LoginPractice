@@ -10,11 +10,13 @@ import Foundation
 enum SocialLoginType {
     case kakao
     case apple
+    case google
     
     var serviceName: String {
         switch self {
         case .kakao: return "Kakao"
         case .apple: return "Apple"
+        case .google: return "Google"
         }
     }
     
@@ -22,6 +24,7 @@ enum SocialLoginType {
         switch self {
         case .kakao: return KakaoLoginAdapter()
         case .apple: return AppleLoginAdapter()
+        case .google: return GoogleLoginAdapter()
         }
     }
     

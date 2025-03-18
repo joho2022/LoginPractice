@@ -46,6 +46,15 @@ struct LoginView: View {
                             }
                         }
                         
+                        SocialLoginButton(type: .google) {
+                            Task {
+                                await viewModel.login(with: .google)
+                                if viewModel.userInfo != nil {
+                                    isShowingUserInfo = true
+                                }
+                            }
+                        }
+                        
                         SocialLoginButton(type: .apple) {
                             Task {
                                 await viewModel.login(with: .apple)
