@@ -29,6 +29,8 @@
 		D65DF57C2D88249D00A7EDD3 /* AppleLoginAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65DF57B2D88249D00A7EDD3 /* AppleLoginAdapter.swift */; };
 		D65DF5812D89E3AA00A7EDD3 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = D65DF5802D89E3AA00A7EDD3 /* GoogleSignIn */; };
 		D65DF5832D89E61900A7EDD3 /* GoogleLoginAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65DF5822D89E61900A7EDD3 /* GoogleLoginAdapter.swift */; };
+		D65DF5862D8AF92B00A7EDD3 /* NidThirdPartyLogin in Frameworks */ = {isa = PBXBuildFile; productRef = D65DF5852D8AF92B00A7EDD3 /* NidThirdPartyLogin */; };
+		D65DF5882D8B323F00A7EDD3 /* NaverLoginAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65DF5872D8B323F00A7EDD3 /* NaverLoginAdapter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,7 @@
 		D65DF57B2D88249D00A7EDD3 /* AppleLoginAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleLoginAdapter.swift; sourceTree = "<group>"; };
 		D65DF57D2D888DE700A7EDD3 /* LoginPractice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LoginPractice.entitlements; sourceTree = "<group>"; };
 		D65DF5822D89E61900A7EDD3 /* GoogleLoginAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleLoginAdapter.swift; sourceTree = "<group>"; };
+		D65DF5872D8B323F00A7EDD3 /* NaverLoginAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverLoginAdapter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,7 @@
 			files = (
 				D65DF53E2D80B32300A7EDD3 /* KakaoSDK in Frameworks */,
 				D65DF5812D89E3AA00A7EDD3 /* GoogleSignIn in Frameworks */,
+				D65DF5862D8AF92B00A7EDD3 /* NidThirdPartyLogin in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +142,7 @@
 				D65DF5442D80B70900A7EDD3 /* KakaoLoginAdapter.swift */,
 				D65DF57B2D88249D00A7EDD3 /* AppleLoginAdapter.swift */,
 				D65DF5822D89E61900A7EDD3 /* GoogleLoginAdapter.swift */,
+				D65DF5872D8B323F00A7EDD3 /* NaverLoginAdapter.swift */,
 			);
 			path = Adapters;
 			sourceTree = "<group>";
@@ -273,6 +278,7 @@
 			packageProductDependencies = (
 				D65DF53D2D80B32300A7EDD3 /* KakaoSDK */,
 				D65DF5802D89E3AA00A7EDD3 /* GoogleSignIn */,
+				D65DF5852D8AF92B00A7EDD3 /* NidThirdPartyLogin */,
 			);
 			productName = LoginPractice;
 			productReference = D65DF4122D7E073500A7EDD3 /* LoginPractice.app */;
@@ -353,6 +359,7 @@
 			packageReferences = (
 				D65DF53C2D80B32300A7EDD3 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
 				D65DF57F2D89E3AA00A7EDD3 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				D65DF5842D8AF92B00A7EDD3 /* XCRemoteSwiftPackageReference "naveridlogin-sdk-ios-swift" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D65DF4132D7E073500A7EDD3 /* Products */;
@@ -407,6 +414,7 @@
 				D65DF55F2D80B70900A7EDD3 /* AuthError.swift in Sources */,
 				D65DF57C2D88249D00A7EDD3 /* AppleLoginAdapter.swift in Sources */,
 				D65DF5602D80B70900A7EDD3 /* SocialLoginService.swift in Sources */,
+				D65DF5882D8B323F00A7EDD3 /* NaverLoginAdapter.swift in Sources */,
 				D65DF5612D80B70900A7EDD3 /* SocialLoginType.swift in Sources */,
 				D65DF5622D80B70900A7EDD3 /* UserInfo.swift in Sources */,
 				D65DF5642D80B70900A7EDD3 /* LoginView.swift in Sources */,
@@ -759,6 +767,14 @@
 				minimumVersion = 8.0.0;
 			};
 		};
+		D65DF5842D8AF92B00A7EDD3 /* XCRemoteSwiftPackageReference "naveridlogin-sdk-ios-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/naver/naveridlogin-sdk-ios-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -771,6 +787,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D65DF57F2D89E3AA00A7EDD3 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
 			productName = GoogleSignIn;
+		};
+		D65DF5852D8AF92B00A7EDD3 /* NidThirdPartyLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D65DF5842D8AF92B00A7EDD3 /* XCRemoteSwiftPackageReference "naveridlogin-sdk-ios-swift" */;
+			productName = NidThirdPartyLogin;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

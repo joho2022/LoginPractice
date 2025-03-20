@@ -46,6 +46,16 @@ struct LoginView: View {
                             }
                         }
                         
+                        SocialLoginButton(type: .naver) {
+                            Task {
+                                await viewModel.login(with: .naver)
+                                if viewModel.userInfo != nil {
+                                    isShowingUserInfo = true
+                                }
+                            }
+                        }
+                        
+                        
                         SocialLoginButton(type: .google) {
                             Task {
                                 await viewModel.login(with: .google)

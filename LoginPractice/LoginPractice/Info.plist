@@ -7,6 +7,8 @@
 		<dict>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>KakaoLogin</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>kakao$(KAKAO_APP_KEY)</string>
@@ -15,9 +17,21 @@
 		<dict>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>GoogleLogin</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>$(GOOGLE_REVERSED_CLIENT_ID)</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>NaverLogin</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>io.hogeunjo.LoginPractice</string>
 			</array>
 		</dict>
 	</array>
@@ -25,8 +39,18 @@
 	<string>$(KAKAO_APP_KEY)</string>
 	<key>GIDClientID</key>
 	<string>$(GOOGLE_CLIENT_ID)</string>
+    <key>NidAppName</key>
+    <string>LoginPractice</string>
+    <key>NidClientID</key>
+    <string>$(NAVER_CLIENT_ID)</string>
+    <key>NidClientSecret</key>
+    <string>$(NAVER_CLIENT_SECRET)</string>
+    <key>NidUrlScheme</key>
+    <string>io.hogeunjo.LoginPractice</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
+		<string>naversearchapp</string>
+		<string>naversearchthirdlogin</string>
 		<string>kakaokompassauth</string>
 		<string>kakaolink</string>
 		<string>kakaoplus</string>
